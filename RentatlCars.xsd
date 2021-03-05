@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Location_Voitures">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="voiture" maxOccurs="unbounded"/>
+        <xs:element ref="Client" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="voiture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="marque" type="xs:string"/>
+        <xs:element name="Fournisseur" type="xs:string"/>
+        <xs:element ref="Caractéristiques"/>
+        <xs:element ref="Conditions_Location"/>
+        <xs:element name="Évaluations_des_clients" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Caractéristiques">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nbr_Portes" type="xs:string"/>
+        <xs:element name="nbr_Sieges" type="xs:string"/>
+        <xs:element name="nbr_Grandes_Vlises" type="xs:string" minOccurs="0"/>
+        <xs:element name="nbr_Petites_valises" type="xs:string"   minOccurs="0"/>
+        <xs:element name="Boite_de_Vitesse" type="xs:string"/>
+        <xs:element name="Climatisation" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Conditions_Location">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Politique_de_Carbarants" type="xs:string"/>
+        <xs:element name="Kilométrage" type="xs:string"/>
+        <xs:element name="prix_par_jour" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Client">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Nom" type="xs:string"/>
+        <xs:element name="Prénom" type="xs:string"/>
+        <xs:element name="Nationalité" type="xs:string"/>
+        <xs:element name="Age" type="xs:string"/>
+        <xs:element name="Email" type="xs:string"/>
+        <xs:element name="Téléphone" type="xs:string"/>
+        <xs:element name="Num_Vol" type="xs:string" minOccurs="0"/>
+        <xs:element ref="Reservation"/>
+        <xs:element ref="Facture"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="voiture" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Reservation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Pays" type="xs:string"/>
+        <xs:element name="Ville" type="xs:string"/>
+        <xs:element name="Emplacement" type="xs:string"/>
+        <xs:element name="Date_Prise_en_charge" type="xs:string"/>
+        <xs:element name="Heurs_Prise_en_charge" type="xs:string"/>
+        <xs:element name="Date_de_restituation" type="xs:string"/>
+        <xs:element name="Heurs_de_restituation" type="xs:string"/>
+        <xs:element name="Emplacement_de_restituation" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Facture">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nbr_des_jours_reservé" type="xs:string"/>
+        <xs:element name="prix_totale" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
