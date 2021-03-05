@@ -1,0 +1,42 @@
+<!ELEMENT Location_Voitures (voiture+, Client+)>
+<!ELEMENT voiture (marque, Fournisseur, Caractéristiques, Conditions_Location, Évaluations_des_clients)>
+<!ATTLIST voiture
+          id CDATA #REQUIRED>
+<!ELEMENT marque (#PCDATA)>
+<!ELEMENT Fournisseur (#PCDATA)>
+<!ELEMENT Caractéristiques (nbr_Portes, nbr_Sieges, nbr_Grandes_Vlises?, nbr_Petites_valises?, Boite_de_Vitesse, Climatisation)>
+<!ELEMENT nbr_Portes (#PCDATA)>
+<!ELEMENT nbr_Sieges (#PCDATA)>
+<!ELEMENT nbr_Grandes_Vlises (#PCDATA)>
+<!ELEMENT Boite_de_Vitesse (#PCDATA)>
+<!ELEMENT Climatisation (#PCDATA)>
+<!ELEMENT Conditions_Location (Politique_de_Carbarants, Kilométrage, prix_par_jour)>
+<!ELEMENT Politique_de_Carbarants (#PCDATA)>
+<!ELEMENT Kilométrage (#PCDATA)>
+<!ELEMENT prix_par_jour (#PCDATA)>
+<!ELEMENT Évaluations_des_clients (#PCDATA)>
+<!ELEMENT nbr_Petites_valises (#PCDATA)>
+<!ELEMENT Client (Nom, Prénom, Nationalité, Age, Email, Téléphone, Num_Vol?, Reservation, Facture)>
+<!ATTLIST Client
+          id CDATA #REQUIRED
+          voiture CDATA #REQUIRED>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Prénom (#PCDATA)>
+<!ELEMENT Nationalité (#PCDATA)>
+<!ELEMENT Age (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Téléphone (#PCDATA)>
+<!ELEMENT Num_Vol (#PCDATA)>
+<!ELEMENT Reservation (Pays, Ville, Emplacement, Date_Prise_en_charge, Heurs_Prise_en_charge, Date_de_restituation,
+ Heurs_de_restituation, Emplacement_de_restituation)>
+<!ELEMENT Pays (#PCDATA)>
+<!ELEMENT Ville (#PCDATA)>
+<!ELEMENT Emplacement (#PCDATA)>
+<!ELEMENT Date_Prise_en_charge (#PCDATA)>
+<!ELEMENT Heurs_Prise_en_charge (#PCDATA)>
+<!ELEMENT Date_de_restituation (#PCDATA)>
+<!ELEMENT Heurs_de_restituation (#PCDATA)>
+<!ELEMENT Emplacement_de_restituation (#PCDATA)>
+<!ELEMENT Facture (nbr_des_jours_reservé, prix_totale)>
+<!ELEMENT nbr_des_jours_reservé (#PCDATA)>
+<!ELEMENT prix_totale (#PCDATA)>
