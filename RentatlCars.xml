@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Descriptions des voitures -->
+<voiture id="V1">
+      <marque>Peugeot 301</marque>
+      <Fournisseur>Firefly</Fournisseur>
+      <Caractéristiques>
+            <nbr_Portes>4 portes</nbr_Portes>
+            <nbr_Sieges>5 sièges</nbr_Sieges>
+            <nbr_Grandes_Vlises>2</nbr_Grandes_Vlises>
+            <Boite_de_Vitesse>Boîte manuelle</Boite_de_Vitesse>
+            <Climatisation>Oui </Climatisation>
+      </Caractéristiques>
+      <Conditions_Location>
+            <Politique_de_Carbarants>Plein à rendre plein</Politique_de_Carbarants>
+            <Kilométrage>Illimité</Kilométrage>
+            <prix_par_jour>208.35 </prix_par_jour>
+      </Conditions_Location>
+      <Évaluations_des_clients>6</Évaluations_des_clients>
+</voiture>
+
+<voiture id="V2">
+      <marque> Fiat 500</marque>
+      <Fournisseur>Budget</Fournisseur>
+      <Caractéristiques>
+            <nbr_Portes>4 portes</nbr_Portes>
+            <nbr_Sieges>4 sièges</nbr_Sieges>
+            <nbr_Petites_valises>2</nbr_Petites_valises>
+            <Boite_de_Vitesse>Boîte automatique</Boite_de_Vitesse>
+            <Climatisation>Oui</Climatisation>
+      </Caractéristiques>
+      <Conditions_Location>
+            <Politique_de_Carbarants>Plein à rendre plein</Politique_de_Carbarants>
+            <Kilométrage>Illimité</Kilométrage>
+            <prix_par_jour>241.04</prix_par_jour>
+      </Conditions_Location>
+      <Évaluations_des_clients>7.6</Évaluations_des_clients>
+</voiture>
+
+<voiture id="V3">
+      <marque>Dacia Duster </marque>
+      <Fournisseur>Firefly</Fournisseur>
+      <Caractéristiques>
+            <nbr_Portes>4 portes</nbr_Portes>
+            <nbr_Sieges>5 sièges</nbr_Sieges>
+            <nbr_Grandes_Vlises>3</nbr_Grandes_Vlises>
+            <Boite_de_Vitesse>Boîte manuelle</Boite_de_Vitesse>
+            <Climatisation>Oui</Climatisation>
+      </Caractéristiques>
+      <Conditions_Location>
+            <Politique_de_Carbarants>Plein à rendre plein</Politique_de_Carbarants>
+            <Kilométrage>limité:100 km par location</Kilométrage>
+            <prix_par_jour>276.78 </prix_par_jour>
+      </Conditions_Location>
+      <Évaluations_des_clients></Évaluations_des_clients>
+</voiture>
+
+<voiture id="V4">
+      <marque>Toyota Yaris</marque>
+      <Fournisseur>InterRent</Fournisseur>
+      <Caractéristiques>
+            <nbr_Portes>4 portes</nbr_Portes>
+            <nbr_Sieges>5 siéges</nbr_Sieges>
+            <nbr_Grandes_Vlises>1</nbr_Grandes_Vlises>
+            <nbr_Petites_valises>1</nbr_Petites_valises>
+            <Boite_de_Vitesse>Boîte manuelle</Boite_de_Vitesse>
+            <Climatisation>Oui</Climatisation>
+      </Caractéristiques>
+      <Conditions_Location>
+            <Politique_de_Carbarants>Plein à rendre plein</Politique_de_Carbarants>
+            <Kilométrage>limité:150 km par location</Kilométrage>
+            <prix_par_jour>348.37</prix_par_jour>
+      </Conditions_Location>
+      <Évaluations_des_clients>6.9</Évaluations_des_clients>
+</voiture>
+
+
+<voiture id="V5">
+      <marque>Dacia Lodgy </marque>
+      <Fournisseur>Global Rent A Car</Fournisseur>
+      <Caractéristiques>
+            <nbr_Portes>4</nbr_Portes>
+            <nbr_Sieges>7 siéges</nbr_Sieges>
+            <nbr_Grandes_Vlises>4</nbr_Grandes_Vlises>
+            <nbr_Petites_valises>1</nbr_Petites_valises>
+            <Boite_de_Vitesse>Boîte manuelle</Boite_de_Vitesse>
+            <Climatisation>Oui </Climatisation>
+      </Caractéristiques>
+      <Conditions_Location>
+            <Politique_de_Carbarants>Plein à rendre plein</Politique_de_Carbarants>
+            <Kilométrage>Illimité</Kilométrage>
+            <prix_par_jour>870.23 </prix_par_jour>
+      </Conditions_Location>
+      <Évaluations_des_clients>8.1</Évaluations_des_clients>
+</voiture>
+
+<voiture id="V6">
+      <marque>BMW 5 Series</marque>
+      <Fournisseur>Surprice</Fournisseur>
+      <Caractéristiques>
+            <nbr_Portes>4 portes</nbr_Portes>
+            <nbr_Sieges>5 sièges</nbr_Sieges>
+            <nbr_Grandes_Vlises>2</nbr_Grandes_Vlises>
+            <nbr_Petites_valises>1</nbr_Petites_valises>
+            <Boite_de_Vitesse>Boîte automatique</Boite_de_Vitesse>
+            <Climatisation>Oui</Climatisation>
+      </Caractéristiques>
+      <Conditions_Location>
+            <Politique_de_Carbarants>Plein à rendre plein</Politique_de_Carbarants>
+            <Kilométrage>illimité</Kilométrage>
+            <prix_par_jour>2133.39 </prix_par_jour>
+      </Conditions_Location>
+      <Évaluations_des_clients>7.8</Évaluations_des_clients>
+</voiture>
+
+
+
+
+
+
+<!--les informations sue les Clients -->
+<Client id="C1" voiture="V2">
+      <Nom>ALAKOUCHE</Nom>
+      <Prénom>Abderrahim</Prénom>
+      <Nationalité>Marocaine</Nationalité>
+      <Age>21</Age>
+      <Email>abderrahim@gmail.com</Email>
+      <Téléphone>0612121212</Téléphone>
+      <Num_Vol>1111</Num_Vol>
+      <Reservation>
+            <Pays>Allemagne</Pays>
+            <Ville>Munich</Ville>
+            <Emplacement>Aéroport de Munich (MUC)</Emplacement>
+            <Date_Prise_en_charge>18-07-2020</Date_Prise_en_charge>
+            <Heurs_Prise_en_charge>10:00</Heurs_Prise_en_charge>
+            <Date_de_restituation>21-07-2020</Date_de_restituation>
+            <Heurs_de_restituation>10:00</Heurs_de_restituation>
+            <Emplacement_de_restituation>Aéroport de Munich (MUC)</Emplacement_de_restituation>
+      </Reservation>
+      <Facture>
+            <nbr_des_jours_reservé>3</nbr_des_jours_reservé>
+            <prix_totale>723.12 </prix_totale>
+      </Facture>
+</Client>
+
+
+<Client id="C2" voiture="V5">
+      <Nom>EL OUARRATI</Nom>
+      <Prénom> Lahsen</Prénom>
+      <Nationalité>Marocaine</Nationalité>
+      <Age>21</Age>
+      <Email>Lahsen@gmail.com</Email>
+      <Téléphone>06767676767</Téléphone>
+      <Num_Vol>2222</Num_Vol>
+      <Reservation>
+            <Pays>France</Pays>
+            <Ville>Nice</Ville>
+            <Emplacement>Aéroport de Nice</Emplacement>
+            <Date_Prise_en_charge>22-07-2020</Date_Prise_en_charge>
+            <Heurs_Prise_en_charge>00:00</Heurs_Prise_en_charge>
+            <Date_de_restituation>30-07-2020</Date_de_restituation>
+            <Heurs_de_restituation>00:00</Heurs_de_restituation>
+            <Emplacement_de_restituation>Aéroport de Nice</Emplacement_de_restituation>
+      </Reservation>
+      <Facture>
+            <nbr_des_jours_reservé>8</nbr_des_jours_reservé>
+            <prix_totale>6961.84</prix_totale>
+      </Facture>
+</Client>
+
+
+<Client id="C3" voiture="V6">
+      <Nom>Nom.Client3</Nom>
+      <Prénom>Prenom.Client3</Prénom>
+      <Nationalité> Japonaise</Nationalité>
+      <Age>44</Age>
+      <Email>Client3@gmail.com</Email>
+      <Téléphone>09876765</Téléphone>
+      <Num_Vol>1230</Num_Vol>
+      <Reservation>
+            <Pays>Maroc</Pays>
+            <Ville>Agadir</Ville>
+            <Emplacement>Aéroport d'Agadir</Emplacement>
+            <Date_Prise_en_charge>20-09-2020</Date_Prise_en_charge>
+            <Heurs_Prise_en_charge>11:00</Heurs_Prise_en_charge>
+            <Date_de_restituation>28-09-2020</Date_de_restituation>
+            <Heurs_de_restituation>11:00</Heurs_de_restituation>
+            <Emplacement_de_restituation>Aéroport de Rabat - Rabat</Emplacement_de_restituation>
+      </Reservation>
+      <Facture>
+            <nbr_des_jours_reservé>11</nbr_des_jours_reservé>
+            <prix_totale>17067.12 </prix_totale>
+      </Facture>
+</Client>
+
+<Client id="C4" voiture="V6">
+      <Nom>Nom.Client4</Nom>
+      <Prénom>Prénom.Client4</Prénom>
+      <Nationalité>Marocaine</Nationalité>
+      <Age>70</Age>
+      <Email>Client4@hotmail.com</Email>
+      <Téléphone>07898989</Téléphone>
+      <Reservation>
+            <Pays>Maroc</Pays>
+            <Ville>Rabat</Ville>
+            <Emplacement>Agence de Surprice Rabat</Emplacement>
+            <Date_Prise_en_charge>01-10-2020</Date_Prise_en_charge>
+            <Heurs_Prise_en_charge>9:00</Heurs_Prise_en_charge>
+            <Date_de_restituation>6-10-2020</Date_de_restituation>
+            <Heurs_de_restituation>9:00</Heurs_de_restituation>
+            <Emplacement_de_restituation>Agence de Surprice Agadir</Emplacement_de_restituation>
+      </Reservation>
+      <Facture>
+            <nbr_des_jours_reservé>5</nbr_des_jours_reservé>
+            <prix_totale>10666.95 </prix_totale>
+      </Facture>
+</Client>
+
+
+<Client id="C5" voiture="V1">
+      <Nom>Nom.Client5</Nom>
+      <Prénom>Prénom.Client5</Prénom>
+      <Nationalité>italienne</Nationalité>
+      <Age>50</Age>
+      <Email>client5@hotmail.com</Email>
+      <Téléphone>09787878</Téléphone>
+      <Num_Vol>4343</Num_Vol>
+      <Reservation>
+            <Pays>Afrique du Sud</Pays>
+            <Ville>Johannesburg</Ville>
+            <Emplacement>Aéroport de Johannesburg</Emplacement>
+            <Date_Prise_en_charge>01-09-2020</Date_Prise_en_charge>
+            <Heurs_Prise_en_charge>03:00</Heurs_Prise_en_charge>
+            <Date_de_restituation>30-09-2020</Date_de_restituation>
+            <Heurs_de_restituation>1:00</Heurs_de_restituation>
+            <Emplacement_de_restituation>Aéroport de Johannesburg</Emplacement_de_restituation>
+      </Reservation>
+      <Facture>
+            <nbr_des_jours_reservé>30</nbr_des_jours_reservé>
+            <prix_totale>6250.5</prix_totale>
+      </Facture>
+</Client>
+</Location_Voitures>
